@@ -31,9 +31,4 @@ export class NavbarComponent {
   constructor(
     private route:Router
   ){}
-
-  routerNavigate(path:string){
-    return this.route.navigate([path]);
-  }
-
 }
