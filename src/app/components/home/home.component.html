@@ -1,0 +1,17 @@
+<app-contenedor [titulo]="'SOFTWARE DE GESTIÓN'" [texto]="txt" [imagen]="WebsiteSrc" [btn1]="'Solicita un presupuesto'"
+  [btn2]="'Saber más'"></app-contenedor>
+
+<div class="mx-auto container font-sans flex flex-col w-3/4 h-40 bg-neutral-light rounded-2xl">
+  <h1 class="my-5 text-4xl text-center font-bold">Una plataforma completa aliada a tu negocio</h1>
+  <h1 class="mx-2 text-xl text-center">{{parrafo2}}</h1>
+</div>
+
+<div class="flex flex-row my-2 mx-auto justify-center">
+<div *ngFor="let item of opciones">
+  <div class="flex flex-col bg-neutral-light rounded-2xl w-60 mx-2 transform transition duration-300 hover:scale-105 max-w-sm shadow-md">
+    <img src={{item.src}} class="w-40 h-40 mx-auto">
+    <h1 class="text-4xl text-center">{{item.nombre}}</h1>
+    <h1 class="my-4 text-xl text-center">{{item.texto}}</h1>
+  </div>
+</div>
+</div>

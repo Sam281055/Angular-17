@@ -1,0 +1,15 @@
+<div class="flex flex-row justify-center bg-secondary-dark my-12 mx-16 rounded-2xl">
+  <div class="container flex flex-row">
+    <div class="flex flex-col w-3/4">
+      <h1 class="font-sans text-4xl mx-5 mt-4 font-bold">{{titulo}}</h1>
+      <p class="mx-5 my-2 text-xl font-sans font-semibold text-neutral-light">{{texto}}</p>
+      <div class="flex flex-row my-4">
+        <app-button [classe]="'ml-20 w-60 h-14'" [text]="btn1"></app-button>
+        <app-button [classe]="'ml-20 w-60 h-14'" [text]="btn2"></app-button>
+      </div>
+    </div>
+    <div class="flex flex-row">
+      <img src={{imagen}} class="w-64 h-64">
+    </div>
+  </div>
+</div>
